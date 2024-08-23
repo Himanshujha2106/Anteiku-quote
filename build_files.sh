@@ -1,2 +1,2 @@
-pip install -r requirements.txt
-
+pip install django
+python manage.py collectstatic
