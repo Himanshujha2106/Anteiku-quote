@@ -85,9 +85,10 @@ WSGI_APPLICATION = 'quote.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',  # This creates an in-memory database
+        'NAME': BASE_DIR / 'db.sqlite3',  # This creates a file-based SQLite database in the project directory
     }
 }
+
 
 
 
